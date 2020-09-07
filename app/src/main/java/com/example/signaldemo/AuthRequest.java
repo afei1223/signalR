@@ -4,10 +4,12 @@ class AuthRequest{
     String UserId;
     int ClientType;
     String Token;
-    public AuthRequest(int clientType,String token,String userId){
+    int version;
+    public AuthRequest(int clientType, String token, String userId, int version){
         this.UserId = userId;
         this.ClientType = clientType;
         this.Token = token;
+        this.version = version;
     }
 }
 
@@ -18,15 +20,4 @@ class SendMessage{
         this.method = method;
         this.message = message;
     }
-}
-
-class ReceiveMessage{
-    String whereFrom;
-    String message;
-
-    public ReceiveMessage(String whereFrom, String message) {
-        this.whereFrom = whereFrom;
-        this.message = message;
-    }
-
 }

@@ -12,6 +12,7 @@ public class MessageData {
     @ColumnInfo(name = "data")
     public String data;
 
-    @ColumnInfo(name = "hadRead")
-    public boolean hadRead;
+    @ColumnInfo(name = "ReceiveTime")
+    public long ReceiveTime;
+
 }
